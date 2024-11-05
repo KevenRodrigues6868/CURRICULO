@@ -23,6 +23,6 @@ Clone o repositório e abra o arquivo `index.html` em um navegador para visualiz
 
 Para saber mais sobre mim ou ver meus projetos, você pode me encontrar nas redes sociais:
 - [LinkedIn](https://www.linkedin.com/in/keven-lucas-rodrigues-b9aa69296/)
-- [GitHub](https://github.com/kevenlucas)
+- [GitHub](https://github.com/KevenRodrigues6868)
 
 &copy; Keven Lucas
