@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: #333;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+nav {
+    background-color: #073a70; /* Azul */
+    padding: 15px;
+    display: flex; /* Ativa o modelo flexbox */
+    justify-content: space-between; /* Espaço entre a imagem e o menu */
+    align-items: center; /* Centraliza verticalmente */
+}
+
+nav img {
+    margin-right: auto; /* Empurra o menu para a direita */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end; /* Alinha os itens do menu à direita */
+    flex-wrap: wrap; /* Faz o menu ajustar-se em telas menores */
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+main section {
+    margin-bottom: 40px;
+    padding: 20px; /* Espaçamento interno */
+    border: 1px solid #d3d3d3; /* Borda cinza claro */
+    border-radius: 8px; /* Bordas arredondadas */
+    background-color: #ffffff;
+}
+
+main section h2 {
+    margin-bottom: 15px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+footer p {
+    color: #666;
+}
+
+/* Estilo para os ícones de contato */
+.social-links {
+    display: flex; /* Flexbox para alinhar as imagens em linha */
+    justify-content: flex-end; /* Alinha as imagens à direita */
+    gap: 40px; /* Espaçamento entre os ícones */
+    margin-top: 5px; /* Espaço entre o título e os ícones */
+}
+
+.social-links a img {
+    transition: transform 0.3s ease; /* Efeito suave ao passar o mouse */
+}
+
+.social-links a img:hover {
+    transform: scale(1.1); /* Aumenta o ícone quando o cursor passa por cima */
+}
+
+.sobre-texto {
+    text-align: justify; /* Justifica o texto */
+    margin: 20px 0; /* Espaçamento acima e abaixo da div */
+}
+
+.sobre-texto p {
+    line-height: 1.6; /* Aumenta o espaçamento entre linhas */
+}
+
+
+#conhecimentos {
+    display: flex; /* Divide a seção em duas colunas */
+}
+
+.texto-container {
+    flex: 1; /* Ocupa a parte esquerda */
+    padding: 20px; /* Espaçamento interno */
+}
+
+.imagens-container {
+    flex: 1; /* Ocupa a parte direita */
+    display: grid; /* Usar grid para organizar as imagens */
+    grid-template-columns: repeat(3, 1fr); /* 3 colunas */
+    gap: 10px; /* Espaçamento entre as imagens */
+    padding: 20px; /* Espaçamento interno */
+}
+
+.imagem {
+    width: 40%; /* Ajusta a imagem para ocupar toda a largura do container */
+    height: auto; /* Mantém a proporção da imagem */
+    cursor: pointer; /* Muda o cursor ao passar sobre a imagem */
+}
+
+.imagem-container {
+    position: relative; /* Para permitir o posicionamento da descrição */
+}
+
+.descricao {
+    display: none; /* Inicia invisível */
+    position: absolute; /* Posiciona em relação ao container */
+    left: -220px; /* Ajuste para garantir que a descrição não sobreponha a imagem */
+    top: 50%; /* Centraliza verticalmente */
+    transform: translateY(-50%); /* Centraliza */
+    background: white; /* Fundo branco */
+    border: 1px solid #ccc; /* Borda para destacar */
+    padding: 10px; /* Espaçamento interno */
+    z-index: 1; /* Coloca em cima das imagens */
+}
+
+/* Para mostrar a descrição quando o mouse estiver sobre uma imagem */
+.imagem-container:hover .descricao {
+    display: block; /* Torna a descrição visível ao passar o mouse */
+}
+
+.imagem-container:hover img {
+    opacity: 0.7; /* Reduz a opacidade da imagem ao passar o mouse */
+}
+
+
+.sobre-container {
+    display: flex; /* Usar flexbox para alinhar imagem e texto lado a lado */
+    align-items: center; /* Centraliza verticalmente */
+}
+
+.sobre-imagem {
+    margin-right: 20px; /* Espaçamento entre a imagem e o texto */
+}
+
+.sobre-imagem img {
+    border-radius: 10px; /* Opcional: para bordas arredondadas */
+    width: 200px; /* Ajuste o tamanho da imagem conforme necessário */
+    height: auto; /* Mantém a proporção */
+}
+
+
+/* Responsividade */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+}
